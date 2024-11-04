@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rose Shop</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        
+        .box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        
+        .box:hover {
+            transform: scale(1.05);
+        }
+        
+        .box img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        
+        .price {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #d9232e;
+            font-weight: bold;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Rose Shop</h1>
+        <div class="grid">
+            <div class="box">
+                <img src="../images/r1.jpeg" alt="Rose">
+                <p class="price">$10.00</p>
+            </div>
+            <!-- Repeat the above box 15 more times -->
+            <div class="box">
+                <img src="../images/rose img.jpeg" alt="Rose">
+                <p class="price">$10.00</p>
+            </div>
+            <div class="box">
+                <img src="../images/t4.jpeg" alt="Rose">
+                <p class="price">$10.00</p>
+            </div>
+            <!-- Add more boxes as needed -->
+        </div>
+    </div>
+</body>
+</html>
